@@ -1,6 +1,7 @@
+import { AppRoutes } from "./routes/AppRoutes"
 
 export const LearnJsApp = () => {
   return (
-    <div>LearnJsApp</div>
+    <AppRoutes/>
   )
 }
