@@ -17,7 +17,8 @@ export const authSlice = createSlice({
 
     },
     logout: (state, { payload }) => {
-
+      state.status = 'auth',
+        state.uid = payload.uid
 
     },
     checkingCredential: (state) => {
@@ -27,4 +28,4 @@ export const authSlice = createSlice({
 });
 
 
-export const { login,logout,checkingCredential } = authSlice.actions;
+export const { login, logout, checkingCredential } = authSlice.actions;
